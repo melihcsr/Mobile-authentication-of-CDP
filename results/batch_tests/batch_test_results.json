@@ -1,0 +1,34 @@
+{
+    "timestamp": "2025-05-04 18:46:30",
+    "model_checkpoint": "checkpoints/rgb_supervised_classifier_n_2_one_by_one/Classifier_epoch_5_final.weights.h5",
+    "total_images": 2,
+    "total_time_seconds": 0.9213430881500244,
+    "time_per_image": 0.4606715440750122,
+    "class_distribution": {
+        "Orijinal": 2
+    },
+    "results": [
+        {
+            "file_name": "original_sample",
+            "file_path": "batch_test_samples/original_sample.png",
+            "predicted_class": "Orijinal",
+            "confidence": 99.99645948410034,
+            "probabilities": {
+                "Orijinal": 99.99645948410034,
+                "Sahte": 0.0035456330806482583
+            },
+            "visualization_path": "results/batch_tests/original_sample_prediction.png"
+        },
+        {
+            "file_name": "fake_sample",
+            "file_path": "batch_test_samples/fake_sample.png",
+            "predicted_class": "Orijinal",
+            "confidence": 99.98477697372437,
+            "probabilities": {
+                "Orijinal": 99.98477697372437,
+                "Sahte": 0.015218574844766408
+            },
+            "visualization_path": "results/batch_tests/fake_sample_prediction.png"
+        }
+    ]
+}

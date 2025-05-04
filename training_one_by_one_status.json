@@ -1,0 +1,15 @@
+{
+    "current_epoch": 5,
+    "total_epochs": 5,
+    "current_image": 1496,
+    "total_images": 1496,
+    "epoch_progress_percent": 99.93315508021391,
+    "overall_progress_percent": 99.98663101604278,
+    "elapsed_time_seconds": 2987.937162876129,
+    "elapsed_time_hours": 0.8299825452433692,
+    "last_loss": 0.17488151788711548,
+    "last_checkpoint": "checkpoints/rgb_supervised_classifier_n_2_one_by_one/Classifier_epoch_5_image_1496.weights.h5",
+    "estimated_time_remaining_seconds": 0.3995102504179876,
+    "status": "completed",
+    "last_update": "2025-05-04 18:37:30"
+}

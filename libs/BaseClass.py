@@ -15,7 +15,7 @@ class BaseClass():
         return np.asarray(onehot_labels).astype(np.float32)
 
 
-    def normaliseDynamicRange(self, image):
+    def normaliseDynamicRange(self, image, args=None):
 
         image -= np.min(image, axis=(0, 1), keepdims=True)
         image /= np.max(image, axis=(0, 1), keepdims=True)
@@ -23,7 +23,7 @@ class BaseClass():
         return image
 
     def reshapeData(self, data, shape):
-        return data.reshape((-1, (*shape)))
+        return data.reshape((-1, shape[0], shape[1], shape[2]))
 
     def printToLog(self, info, pref=""):
         for k, v in info.items():

@@ -1,0 +1,80 @@
+batchsize: 128
+checkpoint_dir: checkpoints
+dataset:
+  args:
+    augmentation: false
+    augmentation_args:
+      first_order:
+      - rotation
+      flip:
+      - 0
+      - 1
+      gamma:
+      - 0.5
+      - 1.2
+      - 0.1
+      rotation_angles:
+      - 0
+      - 90
+      - 180
+      - 270
+      second_order:
+      - gamma
+    bad_indices:
+    - 29
+    - 39
+    - 104
+    - 106
+    - 110
+    - 120
+    - 130
+    - 140
+    - 141
+    - 150
+    - 174
+    - 208
+    - 226
+    - 235
+    - 244
+    - 270
+    - 280
+    - 290
+    - 300
+    printed_path: ./data/original/
+    symbol_size: 5
+    synchronize_with_template: false
+    target_size:
+    - 330
+    - 330
+    - 3
+    templates_path: ./data/binary_templates/
+    templates_target_size:
+    - 330
+    - 330
+    test_ration: 0.5
+    train_ratio: 0.4
+    val_ratio: 0.1
+  dataset_name: PGC_5x5
+models:
+  classifier:
+    conv_filters:
+    - 32
+    - 16
+    - 8
+    dense_filters:
+    - 512
+    - 128
+    - 64
+    - 16
+    input_channels: 3
+    layer_normalisation: false
+    loss: binary_crossentropy
+    lr: 0.0001
+    n_classes: 5
+    name: ClassifierSuprevised
+    optimizer: adam
+    target_size:
+    - 330
+    - 330
+    - 3
+results_dir: results

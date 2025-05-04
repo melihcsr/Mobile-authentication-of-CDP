@@ -4,7 +4,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import *
 import datetime
 
-from libs.to_public.BaseClass import BaseClass
+from libs.BaseClass import BaseClass
 from libs.Classifier import Classifier
 # ======================================================================================================================
 
@@ -26,11 +26,10 @@ class ClassificationModel(BaseClass):
             log_dir=self.tensor_board_dir,
             histogram_freq=1,
             write_graph=True,
-            write_grads=True,
             write_images=True
         )
 
-        self.__initClassificationModel(args)
+        self.__initClassificationModel()
 
         self.tensor_board.set_model(self.ClassifierModel)
 

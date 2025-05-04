@@ -1,0 +1,11 @@
+{
+    "current_epoch": 5,
+    "total_epochs": 5,
+    "progress_percent": 100.0,
+    "elapsed_time_seconds": 42.477559089660645,
+    "elapsed_time_hours": 0.01179932196935018,
+    "last_loss": 0.6786280870437622,
+    "last_checkpoint": "checkpoints/rgb_supervised_classifier_n_2_simple/Classifier_epoch_5.weights.h5",
+    "status": "completed",
+    "last_update": "2025-05-04 17:43:29"
+}
